@@ -1,0 +1,668 @@
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: "Spantaran";
+    src: url("../fonts/Spantaran.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src:url("../fonts/Poppins-SemiBold.ttf"),
+    url("../fonts/Poppins-Regular.ttf"),
+    url("../fonts/Poppins-Medium.ttf"),
+    url("../fonts/Poppins-Light.ttf"),
+   url("../fonts/Poppins-sBold.ttf");
+}
+
+.poppins{
+    font-family: "Poppins";
+
+}
+
+:root{
+    --FuenteRoboto: Roboto-Medium, sans-serif;
+    --FuenteSpantaran: Spantaran, sans-serif;
+
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-black:hover {
+    color: #fffbf4;
+}
+
+.dropdown-menu {
+    background-color: #343a40 !important;
+}
+
+.dropdown-item {
+    color: #f8f9fa !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #50595f !important;
+}
+
+.carousel-indicators li {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 4rem;
+}
+
+.bg-negro {
+    background: #000 !important;
+}
+
+.bg-work {
+    background: #ff6302;
+}
+
+.dropdown-item:hover {
+    background: #000 !important;
+}
+
+.fondo-work {
+    background: url("../img/fondos/BLOQUE PARA WORK.png") center no-repeat;
+    background-size: cover;
+}
+
+.fondo-colormix {
+    background: url("../img/fondos/BLOQUE PARA COLOR MIX.png") center no-repeat;
+    background-size: cover;
+}
+
+.fondo-dry-work {
+    background: url("../img/fondos/BLOQUE PARA WORK DRY TECH.png") center no-repeat;
+    background-size: cover;
+}
+
+.fondo-dry-sport {
+    background: url("../img/fondos/BLOQUE PARA SPORT DRY TECH.png") center no-repeat;
+    background-size: cover;
+}
+
+
+.rounded-elipse {
+    border-radius: 2rem !important;
+}
+
+
+/*Para la pagina de heiss principal*/
+/*.bg-img-heiss-classic {*/
+/*    background: url("../img/fondos/fondo para incio classic.png");*/
+/*    background-size: cover;*/
+/*    !*border: 0.5rem solid white;*!*/
+/*    border-radius: 5rem;*/
+/*    transition: 2s;*/
+/*}*/
+.bg-img-heiss-classic > img:hover {
+    transform: scale(1.2);
+}
+
+/*.bg-img-heis-dry {*/
+/*    background: rgba(0,0,0,1);*/
+/*    !*border: 0.5rem solid white;*!*/
+/*    border-radius: 5rem;*/
+/*    transition: 2s;*/
+/*}*/
+.bg-img-heis-dry > img {
+    width: 66%;
+}
+
+.bg-img-heis-dry > img:hover {
+    transform: scale(1.2);
+}
+
+.bg-fondo-img {
+    background: url("../img/fondos/fondo_rectangulos.jpg");
+    background-size: 120%;
+}
+
+
+/*.bg-color-plus-1 {*/
+/*    background: url("../img/fondos/fondo coolplus.png") no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+.bg-color-plus-1 {
+    background: url("../img/fondos/fondo-coolplus.jpg") no-repeat;
+    background-size: cover;
+}
+.bg-color-plus-2 {
+    background: url("../img/fondos/fondo-coolplus.jpg") center no-repeat;
+    background-size: cover;
+}
+.bg-color-plus-3 {
+    background: url("../img/fondos/seccion coolplus contenido.png") center;
+    background-size: 200%;
+
+}
+
+/*.bg-color-plus-2 {*/
+/*    background: url("../img/fondos/fondo para 3 coolplyus.png") no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+.border-semicircular-r {
+    border-radius: 0 400px 0 0;
+}
+
+.border-circular-r {
+    border: 2px black solid;
+    border-left: none;
+    border-radius: 0 80px 80px 0;
+}
+
+.border-semicircular-l {
+    border-radius: 400px 0 0 0;
+}
+
+.border-circular-l {
+    border: 2px black solid;
+    border-right: none;
+    border-radius: 80px 0 0 80px;
+}
+
+.modal-heiss-bg {
+    background: none;
+    border: none;
+}
+
+.hover-img-index {
+    transition: 1s;
+}
+
+.hover-img-index:hover {
+    transform: scale(1.2);
+}
+
+.text-btn-ver {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    font-family: var(--FuenteRoboto);
+    transition: 2s;
+}
+
+.btn-light:hover > .text-btn-ver {
+    transform: scale(1.1);
+}
+
+.logo-heiss-w-min {
+    width: 200px;
+    animation: rotate3d 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate3d {
+    0% {
+        transform: perspective(600px) rotateY(0)
+    }
+    25% {
+        transform: perspective(600px) rotateY(360deg)
+    }
+    50% {
+        transform: perspective(600px) rotateY(0)
+    }
+    75% {
+        transform: perspective(600px) rotateY(0)
+    }
+    100% {
+        transform: perspective(600px) rotateY(0)
+    }
+}
+
+
+/*card producto*/
+.text-product {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/*.btn-whatsapp {
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    width: 4rem;
+}*/
+
+/*imagenes iconos*/
+.img-fluid-icono {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+/*region formulario-register*/
+.form-heiss {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #95999c;
+    text-align: center;
+}
+
+.form-heiss:focus {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #95999c;
+}
+
+.form-heiss::placeholder {
+    color: #95999c;
+}
+
+/*endregion*/
+
+
+/*footer del index*/
+.footer-index {
+    width: 100%;
+    position:relative;
+    bottom: 0;
+}
+
+/*regionMediaQueries*/
+@media (max-width: 766px) {
+    .p-5 {
+        padding: 5px !important;
+    }
+}
+
+/*endregion*/
+
+/*regionslides*/
+.splide__arrow svg {
+    fill: black;
+}
+
+.splide__arrow svg:hover {
+    fill: #646969;
+}
+
+/*endregion*/
+
+
+.thead-dark {
+    background: black;
+    color: white;
+}
+
+.cuadrado-color {
+    width: 65px;
+    height: 65px;
+    border: 1px solid
+}
+
+.table-bordered tr > td {
+    border: 2px solid black;
+}
+
+.productos-list {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 35rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.producto {
+    grid-column: span 2;
+}
+
+.img-logo-marca {
+    width: 10rem;
+}
+
+.item-logo-marca-active {
+    display: list-item;
+}
+
+.item-logo-marca {
+    display: none;
+}
+
+.marca {
+    display: flex;
+    justify-content: center;
+}
+
+.img-producto-detalle{
+    max-width: 70px;
+    border: 2px solid black;
+}
+.img-sport-tipos{
+    width: 50%;
+}
+
+/*regionsecciondatos-modal*/
+
+.titulo-modal-producto{
+    font-family: var(--FuenteRoboto);
+    font-weight: bold;
+    font-size: 2.8rem;
+    text-align: end;
+    padding-left: 8rem;
+}
+.titulo-modal-producto>span{
+    font-weight: lighter;
+}
+
+@media (max-width: 1200px) {
+    .titulo-modal-producto{
+        padding-left: 0;
+    }
+}
+
+
+td{
+    font-family: var(--FuenteRoboto);
+    font-size: 1.2rem;
+}
+.table-white{
+    border: none !important;
+    background: white !important;
+}
+.table-bordered{
+    border: none;
+}
+.table th, .table td{
+    padding: 0.3rem;
+}
+/*endregion*/
+
+/*region imagenesmodal*/
+.modal-img-preview{
+    max-width: 70px;
+    border: 2px solid black;
+}
+/*endregion*/
+
+/*region infocarousellinea*/
+.carousel-sport-info{
+    background: #dc3545;
+}
+.carousel-work-info{
+    background: #f8c607;
+}
+.carousel-mix-info{
+    background: #17a2b8;
+}
+/*endregion*/
+@media (max-width: 990px) {
+    .productos-list {
+        grid-auto-rows: 30rem;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    }
+}
+
+#carouselExampleCaptionsCP{
+    display: none;
+}
+
+@media (max-width: 450px) {
+    .productos-list {
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    }
+    .img-sport-tipos{
+        width: auto;
+    }
+    .card{        
+        overflow: scroll;
+    }
+    #carouselExampleCaptions2{
+        display: none;
+    }
+    #carouselExampleCaptionsCP{
+        display: block;
+    }
+    #btn_VM{
+        display: none;
+    }
+}
+
+.bg-custom{
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    margin-right: 2px;
+    }
+
+@media (max-width: 574px) {
+    #row-botones{
+        margin-left: 1px;
+    }
+
+}
+
+path:hover{
+    color: red;
+}
+
+/* .buthov:hover {background-color: #000} */
+
+p{
+    text-align:justify;
+}
+
+.buthov p{
+    display: none;
+}
+
+.buthov:hover p {display:contents;}
+
+.buthov:hover img{ display: none;}
+
+.MyV{
+  border-top: white 7px ridge;
+  border-left: white 7px ridge;
+}
+
+/* BODY INDEX */
+.boidx{
+    background-image: url(../img/fondos/fondo_rectangulos.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+.txtidx{
+    font-weight: bold; 
+    font-size: 46px;
+    color: black; 
+}
+
+@media (max-width: 450px) {
+    .boidx{
+        background-image: url(../img/fondos/fondo_rectangulosCEL.jpg);
+    }
+    .txtidx{
+        font-weight: bold; 
+        font-size: 36px;
+        color: black;
+        }
+}
+
+.btn_MasInfo{
+    border-radius: 15px;
+}
+
+
+/* BOTON NEGRO TRANSPARENTE */
+.btn_negrot{
+    background: rgba(0,0,0,0.6);
+}
+
+.btn_negrot:hover{
+    background: rgb(0, 0, 0);
+}
+
+/* TAMAÑO DE LETRA 18 */
+.t18{
+    font-size: 18px
+}
+
+/* BOTON COTIZAR */
+.btnCotizar{
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+/* LOGO EN EL + DEL HEADER */
+#logo_nav #loguito{
+    display: none;
+}
+
+
+#logo_nav:hover #dropdown-marcas{
+    display: none;
+}
+
+#logo_nav:hover #loguito{
+    display: contents;
+    transition-timing-function:ease-in-out;
+    transition-duration: 0.8s;
+    transition-delay: 0.2s;
+}
+
+/* SHODOW TEXT INDEX */
+.line{
+    text-shadow:0 -12px 10px white, 0 12px 10px white, 13px 0 10px white, -13px 0 10px white;
+}
+
+/* MEDIA QUERY CENTRAR TALLAS DISPONIBLES */
+@media (min-width: 768px) {
+    .tallamid {
+        margin-right: 16%;
+    }
+}
+
+/* NOSTROS */
+.border-semicircularNS-r {
+    border-radius: 0 400px 0 0;
+}
+
+.border-circularNS-r {
+    border: 2px black solid;
+    border-left: none;
+    border-radius: 0 80px 80px 0;
+}
+
+.border-semicircularNS-l {
+    border-radius: 400px 0 0 0;
+}
+
+.border-circularNS-l {
+    border: 2px black solid;
+    border-right: none;
+    border-radius: 80px 0 0 80px;
+}
+
+
+@media (max-width: 946px) {
+    .border-semicircularNS-r {
+        border-radius: 0;
+    }
+    
+    .border-circularNS-r {
+        border: 2px black solid;
+        border-radius: 0 0 80px 80px ;
+    }
+    
+    .border-semicircularNS-l {
+        border-radius: 0;
+    }
+    
+    .border-circularNS-l {
+        border: 2px black solid;
+        border-radius: 0 0 80px 80px ;
+    }
+}
+
+/* NOMBRE COMPONENTES PARA CELULAR
+#comph3{
+    font-weight: 100;
+    font-size:  3.5rem;
+}
+@media (max-width: 768px) {
+    #comph3{
+        font-weight: 100;
+        font-size:  3rem;
+    }
+}
+
+/* LIBRO 
+#libh3{
+    font-weight: 100;
+    font-size:  3.5rem;
+}
+@media (max-width: 768px) {
+    #libh3{
+        font-weight: 100;
+        font-size:  3rem;
+    }
+} */
+
+/* MEDIA QUERY LIBRO, HEISSDRY Y HEISS CLASSIC*/
+@media (max-width: 946px) {
+    .display-4 {
+        font-weight: 120;
+        font-size: 3rem;
+    }
+
+    .display-3 {
+        font-weight: 120;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 946px) {
+
+    .border-circular-r {
+        border: 2px black solid;
+        border-radius: 0 0 80px 80px;
+    }
+    .border-semicircular-r {
+        border-radius: 0;
+    }
+    .border-semicircular-l {
+        border-radius: 0;
+    }    
+    .border-circular-l {
+        border: 2px black solid;
+        border-radius: 0 0 80px 80px;
+    }
+}
+
+.h4-5{
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.37rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 500px) {
+    .img-carousel {
+        width: 100%;
+        height: 15rem;
+    }
+}
